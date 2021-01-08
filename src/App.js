@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import Coursesales from './components/Coursesales';
 
 function App() {
+
+  var courses = [
+    {name:'autocar', price:'99' },
+    {name:'autocar132', price:'799' },
+    {name:'autocar341', price:'599' },
+    {name:'autocar23', price:'499' },
+    {name:'autocar13241', price:'199' },
+  ]
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <Coursesales items={courses}/>
     </div>
   );
 }
